@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3647f9bb99.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Radiant</title>
+  </head>
+  <body>
+    <nav class="category">
+      <div class="category__header">
+        <a href="my-energy.html">
+          <img src="img/sample-logo-2.gif" alt="" class="category__logo" />
+        </a>
+      </div>
+      <ul class="category__ul category__energy-management">
+        <a href="#"
+          ><li class="category__li">
+            <span class="category__name">My Energy</span>
+          </li></a
+        >
+        <a href="#"
+          ><li class="category__li">
+            <span class="category__name">Home Efficiency</span>
+          </li></a
+        >
+      </ul>
+      <ul class="category__ul category__account">
+        <a href="#">
+          <li class="category__li">
+            <span class="category__name">My account</span>
+          </li>
+        </a>
+        <a href="#"
+          ><li class="category__li">
+            <span class="category__name">Bill Pay</span>
+          </li></a
+        >
+        <a href="#"
+          ><li class="category__li">
+            <span class="category__name">Support Center</span>
+          </li></a
+        >
+        <a href="index.html"
+          ><li class="category__li">
+            <span class="category__name">Logout</span>
+          </li></a
+        >
+      </ul>
+    </nav>
+    <header class="my-energy__header">
+      <div class="my-energy__header__title">
+        <h2>My Energy</h2>
+        <div>
+          <a href="#" class="header__dashboard__display">당월</a>
+          <a href="#" class="header__dashboard__hide">최근 3개월</a>
+          <a href="#" class="header__dashboard__hide">연간</a>
+        </div>
+      </div>
+      <div class="my-energy__header__profile">
+        <h3 class="my-energy__header__welcome">Hi Eric!</h3>
+        <a href="#"
+          ><img src="img/eric.jpg" alt="" class="my-energy__header__image"
+        /></a>
+      </div>
+    </header>
+    <main class="my-energy__main">
+      <div class="real-time__intel">
+        <div class="real-time__monitoring">
+          <div class="real-time__usage">
+            <div class="real-time__usage__image">
+              <i class="fas fa-bolt fa-3x"></i>
+            </div>
+            <div class="real-time__usage__text">
+              <span>이번달 누적 요금</span>
+              <span class="real-time__bill">56,000 원</span>
+              <span class="real-time__period consume-period"
+                >2020.8.1-2020.8.25</span
+              >
+            </div>
+          </div>
+          <div class="real-time__analysis">
+            <span>작년대비 전기사용량이 10% 증가하였습니다.</span>
+            <span>이번달 예상 전기료는 93,000원 입니다.</span>
+          </div>
+          <div class="real-time__tier">
+            <div id="real-time__tier__graph">
+      
+            </div>
+          </div>
+        </div>
+        <canvas id="real-time__daily-chart" width="6" height="1"></canvas>
+      </div>
+      <div class="my-energy__intel">
+        <div class="my-energy__intel__submenu">
+          <div class="intel__title">
+            <h3>MY ENERGY SCORE</h3>
+          </div>
+          <div class="my-energy__intel__contents">
+            <div class="chart-container">
+              <canvas id="real-time__score-chart"></canvas>
+              <span id="real-time__score-text"></span>
+            </div>
+            <div class="chart-summary-container">
+              <h4>에너지 소비등급: 1등급</h4>
+              <div class="chart-summary-row">
+                <div class="chart-summary-item">
+                  <h5>전기소비량</h5>
+                  <span id="energy-usage-amount">상위 30%</span>
+                </div>
+                <div class="chart-summary-item">
+                  <h5>전기 소비습관</h5>
+                  <span id="energy-usage-pattern">Good</span>
+                </div>
+              </div>
+              <div class="chart-summary-row">
+                <div class="chart-summary-item">
+                  <h5>친환경에너지</h5>
+                  <span id="clean-energy-amount">10 kWh</span>
+                </div>
+                <div class="chart-summary-item">
+                  <h5>친환경에너지 전환율</h5>
+                  <span id="clean-energy-ratio"">5 %</span>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="my-energy__intel__submenu">
+          <div class="intel__title"><h3>ENERGY NEWS</h3></div>
+          <div class="my-energy__intel__news my-energy__intel__contents">
+            <a href="#">
+              <img
+                src="img/blog-sample-v2.PNG"
+                class="my-energy__intel__news__blog"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/real-time-chart.js"></script>
+  </body>
+</html>

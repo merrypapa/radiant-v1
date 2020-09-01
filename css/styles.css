@@ -1,0 +1,19 @@
+@import "reset.css";
+@import "category.css";
+@import "my-energy.css";
+@import "login.css";
+@import "welcome.css";
+@import "variables.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #161e2e;
+}
+
+main:not([id="index-main"]),
+header {
+  margin-left: 210px;
+  margin-right: 10px;
+}

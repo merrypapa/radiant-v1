@@ -1,0 +1,214 @@
+.my-energy__header {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px 35px;
+  background-color: white;
+}
+.my-energy__header__title {
+  width: 500px;
+  display: flex;
+  align-items: flex-end;
+}
+.my-energy__header__title div {
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.my-energy__header__title a {
+  text-decoration: none;
+  justify-content: space-between;
+  font-size: 16px;
+  color: inherit;
+}
+
+.header__dashboard__display {
+  font-weight: 600;
+}
+.header__dashboard__hide {
+  opacity: 0.6;
+}
+
+.my-energy__header__title h2 {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.intel__title h3 {
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 45px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.my-energy__header__profile {
+  display: flex;
+  align-items: center;
+}
+
+.my-energy__header__image {
+  width: 45px;
+  height: 45px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.real-time__intel {
+  width: 100%;
+  height: 55vh;
+  /* border: 1px solid red; */
+}
+
+.real-time__monitoring {
+  width: 100%;
+  height: 37%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-bg-color);
+}
+
+.real-time__usage {
+  height: 70%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.real-time__usage__image {
+  display: flex;
+  align-items: center;
+}
+
+.real-time__usage__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.real-time__bill,
+.my-energy__intel__tier {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.real-time__analysis {
+  height: 70%;
+  text-align: center;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.real-time__tier {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.my-energy__intel {
+  width: 100%;
+  /* border: 1px solid black; */
+  height: 33vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-energy__intel > div {
+  width: 50%;
+  /* background-color: var(--main-bg-color); */
+}
+.my-energy__intel__contents {
+  /* background-color: var(--main-bg-color); */
+  width: 98%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.consume-period {
+  font-size: 12px;
+}
+
+.my-energy__intel__news__blog {
+  width: 60%;
+  height: 80%;
+}
+
+.my-energy__intel__news a {
+  display: flex;
+  justify-content: center;
+}
+
+#real-time__daily-chart {
+  background-color: var(--main-bg-color);
+}
+
+#real-time__score-text {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70%;
+  margin-top: -40px;
+}
+
+.chart-summary-container,
+.chart-summary-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.chart-summary-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  padding-right: 80px;
+}
+
+.chart-summary-container h4 {
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.chart-summary-container h5 {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.chart-summary-container span {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.chart-summary-item {
+  width: 50%;
+}
+.chart-summary-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}

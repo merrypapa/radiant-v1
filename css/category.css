@@ -1,0 +1,39 @@
+.category {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 210px;
+  height: 100vh;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.category__header a {
+  width: 100%;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category__logo {
+  width: 70%;
+  height: 70%;
+  /* transform: translateY(-20px); */
+}
+
+.category__ul {
+  margin-top: 50px;
+  margin-left: 30px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.category__li {
+  margin-top: 25px;
+}
+
+.category__ul a {
+  text-decoration: none;
+  color: inherit;
+}
