@@ -1,3 +1,4 @@
+/* my-energy header css - start */
 .my-energy__header {
   /* width: 100%; */
   display: flex;
@@ -38,14 +39,6 @@
   font-size: 28px;
 }
 
-.intel__title h3 {
-  font-weight: 600;
-  font-size: 18px;
-  padding: 10px 45px;
-  width: fit-content;
-  height: fit-content;
-}
-
 .my-energy__header__profile {
   display: flex;
   align-items: center;
@@ -54,36 +47,72 @@
 .my-energy__header__image {
   width: 45px;
   height: 45px;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  /* border: 1px solid rgba(0, 0, 0, 0.4); */
   border-radius: 50%;
   margin-left: 10px;
 }
 
-.real-time__intel {
-  width: 100%;
-  height: 55vh;
-  /* border: 1px solid red; */
+/* my-energy header css - end */
+
+/* insight-report css - start */
+
+.insight-report {
+  width: 99%;
+  height: 100px;
+  margin: 15px 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
-.real-time__monitoring {
-  width: 100%;
-  height: 37%;
+.insight-title {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 13px;
+  display: block;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.insight-report span {
+  display: block;
+  font-size: 23px;
+  margin-top: 15px;
+  margin-left: 50px;
+  font-weight: 600;
+}
+
+/* insight-report css - end */
+
+/* real-time monitoring css - start */
+#real-time__monitoring {
+  width: 99%;
+  height: 250px;
   /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--main-bg-color);
+  margin: 20px 15px;
+  box-sizing: border-box;
 }
 
-.real-time__usage {
-  height: 70%;
+.intel-box {
+  height: 230px;
   width: 30%;
-  display: flex;
-  justify-content: center;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
-.real-time__usage__image {
+/* .real-time__usage__image {
   display: flex;
+  align-items: center;
+} */
+
+.real-time__contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -92,14 +121,21 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-left: 5px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   font-size: 15px;
 }
 
-.real-time__bill,
-.my-energy__intel__tier {
+.real-time__bill {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.real-time__tier-text {
+  font-weight: 600;
+  font-size: 23px;
+  margin-top: 15px;
 }
 
 .real-time__analysis {
@@ -112,65 +148,79 @@
   font-size: 20px;
 }
 
-.real-time__tier {
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.my-energy__intel {
-  width: 100%;
-  /* border: 1px solid black; */
-  height: 33vh;
-  display: flex;
-  justify-content: space-between;
-}
-
-.my-energy__intel > div {
-  width: 50%;
-  /* background-color: var(--main-bg-color); */
-}
-.my-energy__intel__contents {
-  /* background-color: var(--main-bg-color); */
-  width: 98%;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
 .consume-period {
   font-size: 12px;
 }
 
-.my-energy__intel__news__blog {
-  width: 60%;
-  height: 80%;
+.real-time__tier {
+  width: 30%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end; */
 }
 
-.my-energy__intel__news a {
+.real-time__guage-chart {
+  height: 190px;
   display: flex;
   justify-content: center;
 }
 
-#real-time__daily-chart {
-  background-color: var(--main-bg-color);
+.real-time__trend_graph {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
 
-#real-time__score-text {
-  font-weight: 600;
-  font-size: 20px;
-  margin-top: 15px;
+/* real-time monitoring css - end */
+
+/* my-energy__intel css - start */
+#my-energy__intel {
+  width: 99%;
+  margin: 20px 15px;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+#my-energy__intel > div {
+  width: 47%;
+  height: 45vh;
+}
+.my-energy__intel__contents {
+  /* background-color: var(--main-bg-color); */
+  margin-top: 10px;
+  width: 98%;
+  height: 90%;
+  display: flex;
+  /* justify-content: space-around; */
+  /* align-items: center; */
 }
 
 .chart-container {
+  width: 200px;
+  height: 250px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: 70%;
-  margin-top: -40px;
 }
+
+.chart-container button {
+  margin-top: 35px;
+  background-color: white;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  border: var(--insight-box-border);
+  border-radius: 5px;
+  outline: none;
+  z-index: 1;
+}
+
+/* border-color: rgba(0, 0, 0, 0.8); */
 
 .chart-summary-container,
 .chart-summary-item {
@@ -181,10 +231,12 @@
 }
 
 .chart-summary-container {
-  width: 100%;
-  height: 100%;
-  padding-top: 40px;
-  padding-right: 80px;
+  width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .chart-summary-container h4 {
@@ -211,4 +263,14 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+
+.my-energy__intel__news__blog {
+  width: 60%;
+  height: 80%;
+}
+
+.my-energy__intel__news a {
+  display: flex;
+  justify-content: center;
 }

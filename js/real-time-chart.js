@@ -1,10 +1,10 @@
 const realTimeDailyChart = document
   .getElementById("real-time__daily-chart")
   .getContext("2d");
-const realTimeScoreChart = document
-  .getElementById("real-time__score-chart")
-  .getContext("2d");
-const realTimeScoreText = document.querySelector("#real-time__score-text");
+// const realTimeScoreChart = document
+//   .getElementById("real-time__score-chart")
+//   .getContext("2d");
+// const realTimeScoreText = document.querySelector("#real-time__score-text");
 
 const chart = new Chart(realTimeDailyChart, {
   // The type of chart we want to create
@@ -105,37 +105,37 @@ const chart = new Chart(realTimeDailyChart, {
   },
 });
 
-const myPieChart = new Chart(realTimeScoreChart, {
-  type: "doughnut",
-  data: {
-    datasets: [
-      {
-        data: [90, 10],
-        backgroundColor: ["#00519E", "#F4F9FB"],
-        borderWidth: 1,
-      },
-    ],
+// const myPieChart = new Chart(realTimeScoreChart, {
+//   type: "doughnut",
+//   data: {
+//     datasets: [
+//       {
+//         data: [90, 10],
+//         backgroundColor: ["#00519E", "#F4F9FB"],
+//         borderWidth: 1,
+//       },
+//     ],
 
-    // These labels appear in the legend and in the tooltips when hovering different arcs
-    // labels: ["Red", "Yellow", "Blue"],
-  },
-  options: {
-    // layout: {
-    //   padding: {
-    //     left: -50,
-    //     right: 0,
-    //     top: 0,
-    //     bottom: 0,
-    //   },
-    // },
-  },
-});
+//     // These labels appear in the legend and in the tooltips when hovering different arcs
+//     // labels: ["Red", "Yellow", "Blue"],
+//   },
+//   options: {
+//     // layout: {
+//     //   padding: {
+//     //     left: -50,
+//     //     right: 0,
+//     //     top: 0,
+//     //     bottom: 0,
+//     //   },
+//     // },
+//   },
+// });
 
-// realTimeScoreChart.canvas.parentNode.style.height = "800px";
-realTimeScoreChart.canvas.parentNode.style.width = "400px";
-realTimeScoreChart.canvas.parentNode.style.margin = "0px -10px";
+// // realTimeScoreChart.canvas.parentNode.style.height = "800px";
+// realTimeScoreChart.canvas.parentNode.style.width = "400px";
+// realTimeScoreChart.canvas.parentNode.style.margin = "0px -10px";
 
-realTimeScoreText.innerHTML = "86점";
+// realTimeScoreText.innerHTML = "86점";
 
 // A Single Angular Gauge Chart - start
 const data = [

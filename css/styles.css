@@ -2,7 +2,10 @@
 @import "category.css";
 @import "my-energy.css";
 @import "login.css";
-@import "welcome.css";
+@import "chart/donut-myScore.css";
+@import "chart/line-realTimeTrend.css";
+@import "chart/guage-realTimeTier.css";
+@import "chart/progress-realTimeBill.css";
 @import "variables.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");

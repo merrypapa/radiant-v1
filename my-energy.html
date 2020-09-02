@@ -9,6 +9,8 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
     <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.0.0/d3.min.js"></script>
+    <!-- <script src="//code.jquery.com/jquery.min.js"></script> -->
     <link rel="stylesheet" href="css/styles.css" />
     <title>Radiant</title>
   </head>
@@ -71,41 +73,79 @@
       </div>
     </header>
     <main class="my-energy__main">
-      <div class="real-time__intel">
-        <div class="real-time__monitoring">
-          <div class="real-time__usage">
-            <div class="real-time__usage__image">
-              <i class="fas fa-bolt fa-3x"></i>
+      <div class="insight-report">
+        <div class="insight-title">
+          <h3>인사이트 리포트</h3>
+        </div>
+        <span>작년대비 전기사용량이 10% 증가하였습니다. 이번달 예상 전기료는 93,000원 입니다.</span>
+      </div>
+        <div id="real-time__monitoring">
+          <div class="real-time__usage intel-box">
+            <div class="insight-title">
+              <h3>실시간 요금현황</h3>
             </div>
+            <div class="real-time__contents">
             <div class="real-time__usage__text">
-              <span>이번달 누적 요금</span>
               <span class="real-time__bill">56,000 원</span>
               <span class="real-time__period consume-period"
-                >2020.8.1-2020.8.25</span
-              >
+                >2020.8.1-2020.8.25</span>
             </div>
+          
+            <!-- <div class="real-time__usage__image">
+              <i class="fas fa-bolt fa-3x"></i>
+            </div> -->
+            <!-- <div class="container"> -->
+              <!-- <div class="row"> -->
+                  <div class="real-time__usage-graph">
+                      <!-- <h3 class="progress-title">HTML5</h3> -->
+                      <div class="progress">
+                          <div class="progress-bar progress-bar-danger" style="width: 100%;">
+                              <!-- <div class="progress-value">85%</div> -->
+                          </div>
+                      </div>
+           
+                  </div>
+              <!-- </div> -->
+          <!-- </div> -->
+        </div>
+
           </div>
-          <div class="real-time__analysis">
-            <span>작년대비 전기사용량이 10% 증가하였습니다.</span>
-            <span>이번달 예상 전기료는 93,000원 입니다.</span>
-          </div>
-          <div class="real-time__tier">
-            <div id="real-time__tier__graph">
-      
+          <div class="real-time__tier intel-box">
+            <div class="insight-title">
+              <h3>현재 누진단계</h3>
             </div>
+            <div class="real-time__contents">
+            <h3 class="real-time__tier-text">2단계</h3>
+                        <div class="real-time__guage-chart">
+                          <div class="chart-gauge">       </div>
+          </div>
           </div>
         </div>
-        <canvas id="real-time__daily-chart" width="6" height="1"></canvas>
+          <div class="real-time__trend intel-box">
+            <div class="insight-title">
+              <h3>당월 사용량 현황</h3>
+            </div>
+            <div class="real-time__trend_graph">
+            <div class="real-time__line-chart">
+                <canvas id="chart"></canvas>
+            </div>
+          </div>
       </div>
-      <div class="my-energy__intel">
-        <div class="my-energy__intel__submenu">
-          <div class="intel__title">
-            <h3>MY ENERGY SCORE</h3>
+    </div>
+      <div id="my-energy__intel">
+        <div class="intel-box">
+          <div class="insight-title">
+            <h3>나의 에너지 등급</h3>
           </div>
           <div class="my-energy__intel__contents">
             <div class="chart-container">
-              <canvas id="real-time__score-chart"></canvas>
-              <span id="real-time__score-text"></span>
+              <figure class="chart" data-percent="50">
+                <figcaption>77점</figcaption>
+                <svg width="200" height="200">
+                  <circle class="outer" cx="125" cy="65" r="55" transform="rotate(-90, 95, 95)"/>
+                </svg>
+              </figure>
+              <button href="#">에너지 점수 올리기</button>
             </div>
             <div class="chart-summary-container">
               <h4>에너지 소비등급: 1등급</h4>
@@ -132,8 +172,8 @@
           </div>
           </div>
         </div>
-        <div class="my-energy__intel__submenu">
-          <div class="intel__title"><h3>ENERGY NEWS</h3></div>
+        <div class="intel-box">
+          <div class="insight-title"><h3>Radiant 뉴스</h3></div>
           <div class="my-energy__intel__news my-energy__intel__contents">
             <a href="#">
               <img
@@ -145,7 +185,12 @@
           </div>
         </div>
       </div>
+
     </main>
-    <script src="js/real-time-chart.js"></script>
+    <!-- <script src="js/real-time-chart.js"></script> -->
+    <script src="js/chart/donut-myScore.js"></script>
+    <script src="js/chart/line-realTimeTrend.js"></script>
+    <script src="js/chart/guage-realTimeTier.js"></script>
+    <script src="js/chart/progress-realTimeBill.js"></script>
   </body>
 </html>
