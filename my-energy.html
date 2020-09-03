@@ -87,7 +87,7 @@
             <div class="real-time__contents">
             <div class="real-time__usage__text">
               <span class="real-time__bill">56,000 원</span>
-              <span class="real-time__period consume-period"
+              <span class="real-time__period"
                 >2020.8.1-2020.8.25</span>
             </div>
                   <div class="real-time__usage-graph">           
@@ -96,29 +96,38 @@
                       </div>
                       <div class="real-time__usage__month-end">
                         <div>
-                        <h3>8월말 예상</h3>
-                        <span>7,2000원<span>
+                          <h3>8월말 예상</h3>
+                          <span>7,2000원<span>
                         </div>
-                        </div>
+                      </div>
+                        <div class="real-time__usage__button">
+                          <button href="#">전기요금 낮추기</button>
+                      </div>
                   </div>
-
-        </div>
-
+            </div>
           </div>
           <div class="real-time__tier intel-box">
             <div class="insight-title">
-              <h3>현재 누진단계</h3>
+              <h3>실시간 요금 적용기준</h3>
             </div>
             <div class="real-time__contents">
-            <h3 class="real-time__tier-text">2단계</h3>
+              <div class="real-time__usage__text">
+                <span class="real-time__bill">현재 누진 2단계 입니다.</span>
+                <span class="real-time__period"
+                  >기본요금 125.9원/kWh 적용</span>
+              </div>
                         <div class="real-time__guage-chart">
-                          <div class="chart-gauge">       </div>
+                          <div class="chart-gauge"></div>
           </div>
           </div>
         </div>
           <div class="real-time__trend intel-box">
             <div class="insight-title">
               <h3>실시간 사용량 현황</h3>
+            </div>
+            <div class="real-time__usage__text real-time__trend__text">
+              <span class="real-time__bill">220.17kWh <span class="real-time__trend__text__delta">(10%🡹 작년대비)</span></span>
+              <span class="real-time__period">2020.8.1-2020.8.25</span>
             </div>
             <div class="real-time__trend_graph">
             <div class="real-time__line-chart">
@@ -129,7 +138,7 @@
     </div>
       <div id="my-energy__intel">
         <div class="intel-box">
-          <div class="insight-title">
+          <div class="insight-title intel-box__title">
             <h3>나의 에너지 등급</h3>
           </div>
           <div class="my-energy__intel__contents">
@@ -168,7 +177,7 @@
           </div>
         </div>
         <div class="intel-box">
-          <div class="insight-title"><h3>Radiant 뉴스</h3></div>
+          <div class="insight-title intel-box__title"><h3>Radiant 뉴스</h3></div>
           <div class="my-energy__intel__news my-energy__intel__contents">
             <a href="#">
               <img

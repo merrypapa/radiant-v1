@@ -9,6 +9,14 @@ var percentValue = value / gaugeMaxValue;
 
 ////////////////////////
 
+// define the bill tier //
+const tierFirst = 60.7;
+const tierSecond = 125.9;
+const tierThird = 125.9;
+const tierFourth = 125.9;
+const tierFifth = 125.9;
+const tierSixth = 125.9;
+
 var needleClient;
 
 (function () {
@@ -43,10 +51,10 @@ var needleClient;
   el = d3.select(".chart-gauge");
 
   margin = {
-    top: 40,
-    right: 20,
-    bottom: 30,
-    left: 60,
+    top: 1,
+    right: 1,
+    bottom: 1,
+    left: 1,
   };
 
   //   width = el[0][0].offsetWidth - margin.left - margin.right;
@@ -73,7 +81,7 @@ var needleClient;
   svg = el
     .append("svg")
     .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom);
+    .attr("height", 120);
 
   // Add layer for the panel
   chart = svg
@@ -203,7 +211,7 @@ var needleClient;
   texts
     .append("text")
     .text(function () {
-      //   return dataset[0].value + "kWh";
+      // return dataset[0].value + "kWh";
     })
     .attr("id", "Value")
     .attr(
@@ -220,7 +228,7 @@ var needleClient;
   texts
     .append("text")
     .text(function () {
-      //   return 0 + "kWh";
+      // return 0 + "kWh";
     })
     .attr("id", "scale0")
     .attr(
@@ -299,7 +307,7 @@ var needleClient;
 
     function Needle(el) {
       this.el = el;
-      this.len = width / 2.5;
+      this.len = width / 3.1;
       this.radius = this.len / 8;
     }
 

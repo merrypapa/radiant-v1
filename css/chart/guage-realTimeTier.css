@@ -1,5 +1,8 @@
 .chart-gauge {
-  /* display: flex; */
+  display: flex;
+  justify-content: center;
+  /* height: 150px; */
+  /* align-items: center; */
   /* width: 400px; */
   /* margin: 100px auto; */
 }
@@ -24,7 +27,7 @@
 
 .needle,
 .needle-center {
-  fill: #000000;
+  fill: #161e2e;
 }
 .text {
   color: "#112864";

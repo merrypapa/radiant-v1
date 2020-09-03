@@ -11,7 +11,7 @@ gradient.addColorStop(0.5, "rgba(0, 81, 158, 0.25)");
 gradient.addColorStop(1, "rgba(0, 81, 158, 0)");
 
 chart.canvas.parentNode.style.width = "300px";
-chart.canvas.parentNode.style.height = "180px";
+chart.canvas.parentNode.style.height = "130px";
 // chart.canvas.parentNode.style.padding = "100px";
 
 const data = {
@@ -115,7 +115,7 @@ const options = {
     },
   },
   legend: {
-    display: true,
+    display: false,
     align: "end",
   },
   point: {

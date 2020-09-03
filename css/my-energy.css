@@ -58,7 +58,7 @@
 
 .insight-report {
   width: 99%;
-  height: 100px;
+  height: 120px;
   margin: 15px 15px;
   padding: 10px;
   box-sizing: border-box;
@@ -71,12 +71,13 @@
   font-size: 13px;
   display: block;
   margin-top: 15px;
+  margin-bottom: 20px;
   margin-left: 10px;
 }
 
 .insight-report span {
   display: block;
-  font-size: 23px;
+  font-size: 25px;
   margin-top: 15px;
   margin-left: 50px;
   font-weight: 600;
@@ -97,7 +98,7 @@
 }
 
 .intel-box {
-  height: 230px;
+  height: 250px;
   width: 30%;
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -114,6 +115,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 190px;
 }
 
 .real-time__usage__text {
@@ -121,21 +123,23 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 25px;
   margin-bottom: 20px;
   font-size: 15px;
+}
+
+.real-time__trend__text {
+  margin-bottom: 0px;
+}
+
+.real-time__trend__text__delta {
+  font-size: 12px;
+  color: rgba(247, 0, 0, 0.6);
 }
 
 .real-time__bill {
   font-weight: 600;
   font-size: 23px;
   margin-bottom: 15px;
-}
-
-.real-time__tier-text {
-  font-weight: 600;
-  font-size: 23px;
-  margin-top: 15px;
 }
 
 .real-time__analysis {
@@ -148,7 +152,7 @@
   font-size: 20px;
 }
 
-.consume-period {
+.real-time__period {
   font-size: 12px;
 }
 
@@ -161,7 +165,7 @@
 }
 
 .real-time__guage-chart {
-  height: 190px;
+  height: 120px;
   display: flex;
   justify-content: center;
 }
@@ -180,23 +184,26 @@
   margin: 20px 15px;
   box-sizing: border-box;
   /* border: 1px solid black; */
-  height: 50vh;
+  height: 47vh;
   display: flex;
   justify-content: space-between;
 }
 
 #my-energy__intel > div {
   width: 47%;
-  height: 45vh;
+  height: 46vh;
 }
 .my-energy__intel__contents {
   /* background-color: var(--main-bg-color); */
-  margin-top: 10px;
   width: 98%;
   height: 90%;
   display: flex;
-  /* justify-content: space-around; */
-  /* align-items: center; */
+  justify-content: center;
+  align-items: center;
+}
+
+.intel-box__title {
+  margin-bottom: 5px;
 }
 
 .chart-container {
