@@ -6,6 +6,7 @@
 @import "chart/line-realTimeTrend.css";
 @import "chart/guage-realTimeTier.css";
 @import "chart/progress-realTimeBill.css";
+@import "chart/swiper-blog.css";
 @import "variables.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");

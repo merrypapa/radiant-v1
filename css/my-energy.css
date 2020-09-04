@@ -285,13 +285,3 @@
   justify-content: space-between;
   margin-bottom: 20px;
 }
-
-.my-energy__intel__news__blog {
-  width: 320px;
-  height: 190px;
-}
-
-.my-energy__intel__news a {
-  display: flex;
-  justify-content: center;
-}
